@@ -8,7 +8,7 @@ int binarySearch(int arr[], int size, int key)
 
     // int mid= (start+end)/2;
 
-    int mid= start + (end-start)/2; //for edge cases -> if start + end > INT_MIN
+    int mid= start + (end-start)/2; //for edge cases -> if start + end > INT_MAX
 
     while(start <= end){
         if(arr[mid]==key){
