@@ -4,11 +4,16 @@ using namespace std;
 void bubbleSort(int* arr,int n){
     for (int i = 1; i < n; i++) // for round 1 to n-1
     {
+        bool swappedFlag=false;
         for (int j = 0; j < n-i; j++) //loop till n-i as n+1 is out of bound & at the end of each round ith largest element is at its correct pos
         {
             if(arr[j]>arr[j+1]){
                 swap(arr[j],arr[j+1]);
+                swappedFlag=true;
             }
+        }
+        if(swappedFlag==false){    //optimizing the algorithm further
+            break;
         }
         
     }
